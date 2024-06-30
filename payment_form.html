@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="still.css">
+</head>
+<body>
+    <div class="container">
+    <form action="" method="get">
+        <h1 class="main">Buy Test Series</h1><hr>
+        <p>Domain *
+            <select name="card_type" id="card_type" required>
+                <option value="">Select your domain of test series</option>
+                <option value="Class 9 Maths">Class 9 Maths</option>
+                <option value="Class 9 Science">Class 9 Science</option>
+                <option value="Class 10 Maths">Class 10 Maths</option>
+                <option value="Class 10 Science">Class 10 Science</option>
+
+                <option value="Class 11 Maths">Class 11 Maths</option>
+                <option value="Class 12 Maths">Class 12 Maths</option>
+                <option value="CAT">CAT</option>
+                <option value="GMAT">GMAT</option>
+                <option value="XAT">XAT</option>
+                <option value="GRE">GRE</option>
+                <option value="CSAT">CSAT</option>
+                <option value="CLAT">CLAT</option>
+            </select>
+        </p>
+        <h3>User Information</h3>
+        <p>Name: * <input type="text" id="username" name="name" placeholder="enter name" required ></p>
+    <fieldset>
+        <legend>Gender</legend>
+        <p>
+            Male <input type="radio" name="gender" id="male">
+            Female <input type="radio" name="gender" id="female">
+        </p>
+    </fieldset>
+    <p>Address: <textarea name="address" id="address" cols="100" rows="10" placeholder="enter address"></textarea></p>
+    <p>Email: *<input type="email" id="email" name="email" placeholder="pandey@gmail.com" required></p>
+    <p>Pincode: *<input type="number" name="pincode" placeholder="201014" required></p>
+    <h3>Payment Information</h3>
+    <p>Card Type: *
+        <select name="card_type" id="card_type" required>
+            <option value="">Select a card type</option>
+            <option value="visa">Visa</option>
+            <option value="rupay">Rupay</option>
+            <option value="mastercard">Mastercard</option>
+        </select>
+    </p>
+    <p>Card Number *<input type="number" name="card_number" placeholder="1111-2222-3333-4444" required></p>
+    <p>Expiration date: *
+        <input type="date" name="exp_date" required> 
+    </p>
+    <p>CVV *<input type="password" name="cvv" placeholder="123" required></p>
+    <button type="button" onclick="register()">Pay Now</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
